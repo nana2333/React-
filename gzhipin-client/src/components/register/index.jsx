@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import {Redirect} from 'react-router-dom';
 
 import Logo from '../logo'
-import {reqRegister} from '../../api'
+// import {reqRegister} from '../../api'
 const Item = List.Item;
 class Register extends Component {
   static propTypes={
@@ -17,16 +17,7 @@ class Register extends Component {
     rePassword:'',
     type:'dashen'
   }
-  /*setUsername=val=>{
-    this.setState({
-      username:val
-    })
-  }
-  setPassword=val=>{
-    this.setState({
-      password:val
-    })
-  }*/
+  
   
   handleChange=(name,value)=>{
     this.setState({

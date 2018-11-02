@@ -1,8 +1,11 @@
-import {reqLogin, reqRegister} from '../api'
-import {AUTH_SUCCESS,ERR_MSG} from './action-type'
+import {reqLogin, reqRegister,reqUodateUserInfo} from '../api'
+import {AUTH_SUCCESS,ERR_MSG,UPDATE_USER, RESET_USER} from './action-type'
 //同步action
 export const authSuccess=user=>({type:AUTH_SUCCESS,data:user})
 export const errMsg=msg=>({type:ERR_MSG,data:msg})
+export const updateUser=user=>({type:UPDATE_USER,data:user})
+export const resetUser=msg=>({type:RESET_USER,data:msg})
+
 //注册异步action
 export const register=data=>{
   const {username,password,rePassword,type}=data;
