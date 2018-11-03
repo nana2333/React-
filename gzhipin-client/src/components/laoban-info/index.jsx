@@ -20,7 +20,7 @@ class LaobanInfo extends Component {
     })
   }
   setHeader=header=>{
-    this.setSate({
+    this.setState=({
       header
     })
   }

@@ -40,8 +40,8 @@ class Register extends Component {
  }
 
   render() {
-    const {msg, redirectTo} = this.props.user;
     const {type} = this.state;
+    const {msg, redirectTo} = this.props.user;
     if(redirectTo){
       return <Redirect to={redirectTo}/>
     }
